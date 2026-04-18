@@ -19,6 +19,7 @@ html {
 body {
   height: 100vh;
   color: #495057;
+  background: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -30,6 +31,16 @@ body {
   grid-template-columns: 34rem 44rem;
   column-gap: 4rem;
   align-items: start;
+}
+
+@media screen and (max-width: 480px) {
+  .app {
+    grid-template-columns: 1fr;
+  }
+
+  .form-split-bill {
+    margin-top: 1em;
+  }
 }
 
 .button {
@@ -121,6 +132,7 @@ form {
   margin-bottom: 1.6rem;
   padding: 1.2rem;
 }
+
 .form-split-bill {
   grid-template-columns: 1fr 12rem;
   padding: 3.2rem 4rem;
